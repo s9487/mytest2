@@ -1,0 +1,35 @@
+
+
+spring:
+#  数据库 相关配置
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql:///springdata
+    username: root
+    password: root
+# jpa 相关配置
+  jpa:
+  # 是否显示sql 语句
+    show-sql: true
+    # 使用寿命数据库
+    database: mysql
+    # 是否生成 ddl  主键生成策略
+    generate-ddl: true
+    # 是否自动生成表
+    hibernate:
+      ddl-auto: update
+
+  # redis 相关配置
+  redis:
+    host: 127.0.0.1
+    port: 6379
+
+# 联网地址
+server:
+  port: 8888
+
+#Redis
+
+
+
+
